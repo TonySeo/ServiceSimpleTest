@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_srart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Start"/>
+
+        <Button
+            android:id="@+id/bt_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service bind"/>
+
+        <Button
+            android:id="@+id/bt_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service unbind"/>
+
+        <Button
+            android:id="@+id/bt_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service stop"/>
+
+        <Button
+            android:id="@+id/bt_call_variable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스 멤버 변수 호출하기"/>
+        <Button
+            android:id="@+id/bt_call_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재 실행중인 서비스 갯수 호출하기"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="서비스 멤버 변수 호출 : "/>
+
+        <TextView
+            android:id="@+id/tv_services"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="실행중인 서비스 갯수 호출 : "/>
+
+    </LinearLayout>
+
+</RelativeLayout>
